@@ -1,0 +1,33 @@
+Ce programme présente un "bonhomme de neige" coloré.
+En fait, trois boules empilées en OpenGL avec des commandes clavier:
+	T/t
+		- le 'T' (majuscule) permet d'étirer la tête
+		- le 't' (minuscule) permet d'écraser la tête
+	I/i
+		- le 'I' (majuscule) permet d'étirer la partie intermédiaire
+		- le 'i' (miniscule) permet d'écraser la partie intermédiaire
+	B/b
+		- le 'B' (majuscule) permet d'étirer la base
+		- le 'b' (minuscule) permet d'écraser la base	
+	Autres :
+		- 'q' permet de quitter
+		- 's' fait apparaître la scène en mode de rendu "sommets"
+		- 'f' fait apparaître la scène en mode de rendu filiaire
+		- 'p' fait apparaître la scène en mode de rendu plein
+	Z/z
+		- le 'Z' (majuscule) permet de zoomer
+		- le 'z' (minuscule) permet de dé-zoomer
+		
+Les mouvements de la souris avec le bouton gauche pressé permettent de faire
+bouger la vue.
+Conformément à la commande, l'effet de "Squash & Stretch" à volume constant
+est géré avec adaptation automatique des deux autres dimensions à celle qui
+est étirée (ici -> y).
+Enfin, avec les flèches, du clavier on peut faire tourner les boules:
+
+	<- & -> 	pour faire tourner l'intermédiaire et la tête autour de la base
+	up & down 	pour faire tourner la tête autour de l'intermédiaire Un angle
+				maximum est calculé pour éviter le chevauchement tête/base ...
+				
+Toutefois quand les boules sont deconnectées et/ou écrasées et tournées, il
+reste des comportements peu naturels ...
